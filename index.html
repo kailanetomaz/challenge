@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECODIFICADOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Seja Bem-Vindo </h1>
+
+    </header>
+
+    <main class="conteudo">
+
+        <section class="conteudo__texto-cripto">
+
+            <div class="conteudo__texto-cripto__area-de-escrita">
+                <textarea
+                wrap="hard"
+                rows="8" 
+                maxlength="320"
+                autocomplete="off"
+                placeholder="Digite seu texto"
+                class="texto-cripto"
+                id="texto-cripto"
+                name="texto-cripto"></textarea>
+            </div>
+
+            <div class="regras">
+                <label class="regras__texto"> Regras: Apenas letras sem acento.</label>
+            </div>
+
+            <div class="botoes">
+                <button onclick="criptografar()" class="botao1" id="botao1"> Criptografar</button>
+                <button onclick="descriptografar()" class="botao2" id="botao2" disabled> Descriptografar </button>
+            </div>
+
+        </section>
+
+        <section class="right-section"> 
+            <img class="img_robo" src="robo.png" alt="Ícone">
+            <p id="mensagem">Nenhuma mensagem encontrada</p>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button class="copiar" onclick="copiarTexto()">Copiar</button>
+        
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+    </footer>
+
+    <script src="./app.js" defer></script>
+</body>
+</html>
